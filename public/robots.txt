@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ladimoradeiricchi.it/sitemap.xml
