@@ -1,0 +1,222 @@
+{
+  "/images/bnb/camere/glicine/bagno-camera-glicine-01.webp": {
+    "width": 1200,
+    "height": 1800,
+    "srcSet": "/images/bnb/camere/glicine/bagno-camera-glicine-01-480.webp 480w, /images/bnb/camere/glicine/bagno-camera-glicine-01-960.webp 960w, /images/bnb/camere/glicine/bagno-camera-glicine-01.webp 1200w"
+  },
+  "/images/bnb/camere/glicine/bagno-camera-glicine-05.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/glicine/bagno-camera-glicine-05-480.webp 480w, /images/bnb/camere/glicine/bagno-camera-glicine-05-960.webp 960w, /images/bnb/camere/glicine/bagno-camera-glicine-05.webp 1800w"
+  },
+  "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-01.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-01-480.webp 480w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-01-960.webp 960w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-01.webp 1800w"
+  },
+  "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-02.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-02-480.webp 480w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-02-960.webp 960w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-02.webp 1800w"
+  },
+  "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-04.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-04-480.webp 480w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-04-960.webp 960w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-04.webp 1800w"
+  },
+  "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-06.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-06-480.webp 480w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-06-960.webp 960w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-06.webp 1800w"
+  },
+  "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-15.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-15-480.webp 480w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-15-960.webp 960w, /images/bnb/camere/glicine/camera-glicine-santo-stefano-di-camastra-15.webp 1800w"
+  },
+  "/images/bnb/camere/glicine/dettaglio-letto-castello-camera-glicine.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/glicine/dettaglio-letto-castello-camera-glicine-480.webp 480w, /images/bnb/camere/glicine/dettaglio-letto-castello-camera-glicine-960.webp 960w, /images/bnb/camere/glicine/dettaglio-letto-castello-camera-glicine.webp 1800w"
+  },
+  "/images/bnb/camere/ortensia/bagno-camera-ortensia-01.webp": {
+    "width": 1200,
+    "height": 1800,
+    "srcSet": "/images/bnb/camere/ortensia/bagno-camera-ortensia-01-480.webp 480w, /images/bnb/camere/ortensia/bagno-camera-ortensia-01-960.webp 960w, /images/bnb/camere/ortensia/bagno-camera-ortensia-01.webp 1200w"
+  },
+  "/images/bnb/camere/ortensia/bagno-camera-ortensia-05.webp": {
+    "width": 1200,
+    "height": 1800,
+    "srcSet": "/images/bnb/camere/ortensia/bagno-camera-ortensia-05-480.webp 480w, /images/bnb/camere/ortensia/bagno-camera-ortensia-05-960.webp 960w, /images/bnb/camere/ortensia/bagno-camera-ortensia-05.webp 1200w"
+  },
+  "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-01.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-01-480.webp 480w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-01-960.webp 960w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-01.webp 1800w"
+  },
+  "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-02.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-02-480.webp 480w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-02-960.webp 960w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-02.webp 1800w"
+  },
+  "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-03.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-03-480.webp 480w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-03-960.webp 960w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-03.webp 1800w"
+  },
+  "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-04.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-04-480.webp 480w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-04-960.webp 960w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-04.webp 1800w"
+  },
+  "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-06.webp": {
+    "width": 1200,
+    "height": 1800,
+    "srcSet": "/images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-06-480.webp 480w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-06-960.webp 960w, /images/bnb/camere/ortensia/camera-ortensia-santo-stefano-di-camastra-06.webp 1200w"
+  },
+  "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-01.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-01-480.webp 480w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-01-960.webp 960w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-01.webp 1800w"
+  },
+  "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-02.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-02-480.webp 480w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-02-960.webp 960w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-02.webp 1800w"
+  },
+  "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-03.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-03-480.webp 480w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-03-960.webp 960w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-03.webp 1800w"
+  },
+  "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-04.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-04-480.webp 480w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-04-960.webp 960w, /images/bnb/camere/papavero/camera-papavero-santo-stefano-di-camastra-04.webp 1800w"
+  },
+  "/images/bnb/camere/tulipano/bagno-camera-tulipano-01.webp": {
+    "width": 1200,
+    "height": 1800,
+    "srcSet": "/images/bnb/camere/tulipano/bagno-camera-tulipano-01-480.webp 480w, /images/bnb/camere/tulipano/bagno-camera-tulipano-01-960.webp 960w, /images/bnb/camere/tulipano/bagno-camera-tulipano-01.webp 1200w"
+  },
+  "/images/bnb/camere/tulipano/bagno-camera-tulipano-04.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/tulipano/bagno-camera-tulipano-04-480.webp 480w, /images/bnb/camere/tulipano/bagno-camera-tulipano-04-960.webp 960w, /images/bnb/camere/tulipano/bagno-camera-tulipano-04.webp 1800w"
+  },
+  "/images/bnb/camere/tulipano/bagno-camera-tulipano-08.webp": {
+    "width": 1200,
+    "height": 1800,
+    "srcSet": "/images/bnb/camere/tulipano/bagno-camera-tulipano-08-480.webp 480w, /images/bnb/camere/tulipano/bagno-camera-tulipano-08-960.webp 960w, /images/bnb/camere/tulipano/bagno-camera-tulipano-08.webp 1200w"
+  },
+  "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-01.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-01-480.webp 480w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-01-960.webp 960w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-01.webp 1800w"
+  },
+  "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-02.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-02-480.webp 480w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-02-960.webp 960w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-02.webp 1800w"
+  },
+  "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-03.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-03-480.webp 480w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-03-960.webp 960w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-03.webp 1800w"
+  },
+  "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-04.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-04-480.webp 480w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-04-960.webp 960w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-04.webp 1800w"
+  },
+  "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-06.webp": {
+    "width": 1200,
+    "height": 1800,
+    "srcSet": "/images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-06-480.webp 480w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-06-960.webp 960w, /images/bnb/camere/tulipano/camera-tulipano-santo-stefano-di-camastra-06.webp 1200w"
+  },
+  "/images/bnb/dettagli/chiavi-camera-papavero.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/dettagli/chiavi-camera-papavero-480.webp 480w, /images/bnb/dettagli/chiavi-camera-papavero-960.webp 960w, /images/bnb/dettagli/chiavi-camera-papavero.webp 1800w"
+  },
+  "/images/bnb/dettagli/frase-accoglienza-la-dimora-dei-ricci.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/dettagli/frase-accoglienza-la-dimora-dei-ricci-480.webp 480w, /images/bnb/dettagli/frase-accoglienza-la-dimora-dei-ricci-960.webp 960w, /images/bnb/dettagli/frase-accoglienza-la-dimora-dei-ricci.webp 1800w"
+  },
+  "/images/bnb/dettagli/pigna-ceramica-siciliana.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/dettagli/pigna-ceramica-siciliana-480.webp 480w, /images/bnb/dettagli/pigna-ceramica-siciliana-960.webp 960w, /images/bnb/dettagli/pigna-ceramica-siciliana.webp 1800w"
+  },
+  "/images/bnb/dettagli/targa-camera-papavero.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/dettagli/targa-camera-papavero-480.webp 480w, /images/bnb/dettagli/targa-camera-papavero-960.webp 960w, /images/bnb/dettagli/targa-camera-papavero.webp 1800w"
+  },
+  "/images/bnb/esperienze/cicloturismo-costa-siciliana.webp": {
+    "width": 1536,
+    "height": 1024,
+    "srcSet": "/images/bnb/esperienze/cicloturismo-costa-siciliana-480.webp 480w, /images/bnb/esperienze/cicloturismo-costa-siciliana-960.webp 960w, /images/bnb/esperienze/cicloturismo-costa-siciliana.webp 1536w"
+  },
+  "/images/bnb/esterni/facciata-giorno-la-dimora-dei-ricci.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/esterni/facciata-giorno-la-dimora-dei-ricci-480.webp 480w, /images/bnb/esterni/facciata-giorno-la-dimora-dei-ricci-960.webp 960w, /images/bnb/esterni/facciata-giorno-la-dimora-dei-ricci.webp 1800w"
+  },
+  "/images/bnb/esterni/facciata-notte-la-dimora-dei-ricci-02.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/esterni/facciata-notte-la-dimora-dei-ricci-02-480.webp 480w, /images/bnb/esterni/facciata-notte-la-dimora-dei-ricci-02-960.webp 960w, /images/bnb/esterni/facciata-notte-la-dimora-dei-ricci-02.webp 1800w"
+  },
+  "/images/bnb/esterni/ingresso-notte-la-dimora-dei-ricci.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/esterni/ingresso-notte-la-dimora-dei-ricci-480.webp 480w, /images/bnb/esterni/ingresso-notte-la-dimora-dei-ricci-960.webp 960w, /images/bnb/esterni/ingresso-notte-la-dimora-dei-ricci.webp 1800w"
+  },
+  "/images/bnb/esterni/targa-ingresso-la-dimora-dei-ricci.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/esterni/targa-ingresso-la-dimora-dei-ricci-480.webp 480w, /images/bnb/esterni/targa-ingresso-la-dimora-dei-ricci-960.webp 960w, /images/bnb/esterni/targa-ingresso-la-dimora-dei-ricci.webp 1800w"
+  },
+  "/images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-01.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-01-480.webp 480w, /images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-01-960.webp 960w, /images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-01.webp 1800w"
+  },
+  "/images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-02.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-02-480.webp 480w, /images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-02-960.webp 960w, /images/bnb/esterni/terrazza-serale-la-dimora-dei-ricci-02.webp 1800w"
+  },
+  "/images/bnb/spazi-comuni/colazione-ceramiche-siciliane-01.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/spazi-comuni/colazione-ceramiche-siciliane-01-480.webp 480w, /images/bnb/spazi-comuni/colazione-ceramiche-siciliane-01-960.webp 960w, /images/bnb/spazi-comuni/colazione-ceramiche-siciliane-01.webp 1800w"
+  },
+  "/images/bnb/spazi-comuni/cucina-comune-con-ceramiche-siciliane.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/spazi-comuni/cucina-comune-con-ceramiche-siciliane-480.webp 480w, /images/bnb/spazi-comuni/cucina-comune-con-ceramiche-siciliane-960.webp 960w, /images/bnb/spazi-comuni/cucina-comune-con-ceramiche-siciliane.webp 1800w"
+  },
+  "/images/bnb/spazi-comuni/cucina-comune-la-dimora-dei-ricci-03.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/spazi-comuni/cucina-comune-la-dimora-dei-ricci-03-480.webp 480w, /images/bnb/spazi-comuni/cucina-comune-la-dimora-dei-ricci-03-960.webp 960w, /images/bnb/spazi-comuni/cucina-comune-la-dimora-dei-ricci-03.webp 1800w"
+  },
+  "/images/bnb/spazi-comuni/sala-colazione-la-dimora-dei-ricci-02.webp": {
+    "width": 1800,
+    "height": 1200,
+    "srcSet": "/images/bnb/spazi-comuni/sala-colazione-la-dimora-dei-ricci-02-480.webp 480w, /images/bnb/spazi-comuni/sala-colazione-la-dimora-dei-ricci-02-960.webp 960w, /images/bnb/spazi-comuni/sala-colazione-la-dimora-dei-ricci-02.webp 1800w"
+  },
+  "/images/bnb/territorio/panorama-santo-stefano-di-camastra.webp": {
+    "width": 980,
+    "height": 411,
+    "srcSet": "/images/bnb/territorio/panorama-santo-stefano-di-camastra-480.webp 480w, /images/bnb/territorio/panorama-santo-stefano-di-camastra-960.webp 960w, /images/bnb/territorio/panorama-santo-stefano-di-camastra.webp 980w"
+  },
+  "/images/bnb/territorio/stagno-parco-dei-nebrodi.webp": {
+    "width": 1800,
+    "height": 883,
+    "srcSet": "/images/bnb/territorio/stagno-parco-dei-nebrodi-480.webp 480w, /images/bnb/territorio/stagno-parco-dei-nebrodi-960.webp 960w, /images/bnb/territorio/stagno-parco-dei-nebrodi.webp 1800w"
+  }
+}
