@@ -1,6 +1,6 @@
 # La Dimora dei Ricci — progetto sorgente
 
-Versione del 19 settembre 2026. Progetto React + TypeScript + Vite, con generazione di HTML statico per la pubblicazione. Non richiede Supabase né credenziali o variabili d'ambiente.
+Revisione del 27 settembre 2026. Progetto React + TypeScript + Vite, con generazione di HTML statico per la pubblicazione. Non richiede Supabase né credenziali o variabili d'ambiente.
 
 ## Avvio
 
@@ -34,12 +34,15 @@ Sono esclusi `node_modules`, `dist`, cache e file di sistema: vengono ricreati i
 npm run typecheck
 npm run lint
 npm run build
+python3 scripts/verify-site.py
 ```
 
-Gli script immagini richiedono Python e Pillow. Non occorre eseguirli per avviare o compilare il sito: le immagini pronte sono incluse. Lo script storico `scripts/verify-site.py` confronta anche un archivio di backup esterno al progetto (`../la-dimora-backup-prima-2026-09-14.zip`), non incluso in questo ZIP; quel confronto richiede il backup originale. Non rigenerare l'inventario iniziale per sostituirlo.
+Gli script immagini richiedono Python e Pillow. Non occorre eseguirli per avviare o compilare il sito: le immagini pronte sono incluse. `scripts/verify-site.py` controlla pagine, link interni, metadati, dati della struttura e PDF, salvando i risultati in `audit/verifica-finale.json`. Se mancano l'inventario storico o il backup esterno `../la-dimora-backup-prima-2026-09-14.zip`, segnala quei confronti come non eseguibili e continua le altre verifiche. Non rigenerare l'inventario iniziale per sostituirlo.
+
+La guida HTML è disponibile su `/guida-santo-stefano-di-camastra/`. Per rigenerare il PDF italiano dagli stessi contenuti: esegui il build, poi `python3 scripts/generate-guide-pdf.py` con ReportLab disponibile, infine ripeti build e verifica. Il PDF già incluso non richiede Python per essere servito dal sito.
 
 ## Pubblicazione
 
 Solo dopo approvazione, carica su Netlify la cartella `dist/` generata dal build. Non caricare questo ZIP sorgente su Netlify Drop: contiene anche documenti interni e originali. È disponibile separatamente lo ZIP del sito compilato.
 
-Prima del rilascio consulta `REPORT-AGGIORNAMENTO-2026-09-19.md` per le conferme ancora necessarie. Per modificare testi, contatti e immagini segui `GUIDA-MODIFICHE.md`.
+Prima del rilascio consulta `REPORT-REVISIONE-2026-09-27.md` per le conferme ancora necessarie. Per modificare testi, contatti e immagini segui `GUIDA-MODIFICHE.md`.

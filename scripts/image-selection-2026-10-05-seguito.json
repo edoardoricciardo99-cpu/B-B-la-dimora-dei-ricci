@@ -1,0 +1,34 @@
+[
+  {
+    "source": "originals/revisione-2026-10-05-seguito/049.jpg",
+    "output": "/images/bnb/dettagli/asciugamani-arrotolati.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/cucina comune/036.jpg",
+    "output": "/images/bnb/spazi-comuni/cucina-comune-angolo-caffe.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/cucina comune/037.jpg",
+    "output": "/images/bnb/spazi-comuni/cucina-comune-tavoli.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05-seguito/finestra-sul-mare-villa-margi.jpg",
+    "output": "/images/bnb/territorio/finestra-sul-mare-villa-margi.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05-seguito/lungomare-villa-margi.jpg",
+    "output": "/images/bnb/territorio/lungomare-villa-margi.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05-seguito/agora-halaesa-arconidea.jpg",
+    "output": "/images/bnb/territorio/agora-halaesa-arconidea.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05-seguito/gole-di-tiberio.jpg",
+    "output": "/images/bnb/territorio/gole-di-tiberio.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05-seguito/piramide-38-parallelo.jpg",
+    "output": "/images/bnb/territorio/piramide-38-parallelo.webp"
+  }
+]

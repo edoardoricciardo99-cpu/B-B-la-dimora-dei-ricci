@@ -41,13 +41,13 @@ In `site-settings.ts` modifica `heroImage.src`. Il percorso web inizia con `/ima
 
 | Schermo | `position` | `zoom` |
 |---|---|---|
-| Desktop >980 px | `0% 48%` | `1.25` |
-| Tablet 761–980 px | `20% 48%` | `1.15` |
-| Mobile ≤760 px | `38% 50%` | `1.08` |
+| Desktop ≥1024 px | `35% 60%` | `1.22` |
+| Tablet 768–1023 px | `30% 62%` | `1.08` |
+| Mobile <768 px | `15% 65%` | `1.12` |
 
 `position` indica orizzontale/verticale: aumentando la prima percentuale si sposta il ritaglio verso destra. L'effetto dipende anche dalle proporzioni e dallo zoom, ancorato a sinistra. `zoom: 1` non ingrandisce ulteriormente. Il crop CSS **non altera l'originale**. Ricontrolla sempre tutte le dimensioni dopo una modifica.
 
-In `heroImage.parallax`, `enabled: false` spegne il movimento. `intensity` è 0.035, `maxPixels` è 24. Il parallax è disattivato ≤980 px e per chi preferisce movimento ridotto. Non servono librerie aggiuntive.
+In `heroImage.parallax`, `enabled: false` spegne il movimento. `intensity` è 0.32, `maxPixels` è 110; sotto 768 px si usano `mobileIntensity: 0.24` e `mobileMaxPixels: 50`. Il parallax è disattivato per chi preferisce movimento ridotto. Il movimento usa transform, un listener passivo e requestAnimationFrame; le misure vengono aggiornate solo al ridimensionamento. Non servono librerie aggiuntive.
 
 ## 4. Aggiungere, sostituire o togliere foto
 
@@ -88,15 +88,17 @@ Lo script genera versioni 480/960 px solo se più piccole della base, metadati e
 
 Modifica `faqs` in `visit-content.ts`: ogni domanda ha `id` unico e testi in tre lingue. Il componente HTML nativo funziona da tastiera e prima di JavaScript.
 
-Gli orari di camere, gallerie e footer sono in `copy.it.stay`, `copy.en.stay`, `copy.de.stay` di `content.ts`. Aggiorna anche la FAQ sugli orari. Attualmente inverno check-in 15–21, estate 10–23, check-out sempre 10. Non sono stati inventati mesi di inizio/fine stagione. Schema mantiene il check-out, ma non un unico check-in incompatibile con le due fasce stagionali.
+Gli orari di camere, gallerie e footer sono in `copy.it.stay`, `copy.en.stay`, `copy.de.stay` di `content.ts`. Aggiorna anche la FAQ sugli orari. Orari definitivi: inverno check-in 15:00–22:00, estate 15:00–23:00, check-out entro le 10:00 tutto l’anno. Non sono stati inventati mesi di inizio/fine stagione. Schema mantiene il check-out, ma non un unico check-in incompatibile con le due fasce stagionali.
 
 ## 6. Recensioni e prenotazione diretta
 
-`site.socialProof` contiene `rating: null`, `count: null`, `verifiedOn: ''` e l'URL Google. Inserisci i valori **solo dopo verifica della scheda esatta**, con data in formato AAAA-MM-GG. Finché manca uno dei tre, compare una frase qualitativa, senza stelle o conteggi inventati. Sostituisci la ricerca Google con un link diretto alla scheda quando disponibile.
+`site.socialProof` contiene il rating 4,9 verificato il 27 settembre 2026 sulla scheda Google Maps in Via Brofferio 12. Il conteggio resta non pubblicato. Hero, recensioni e posizione rimandano alla scheda esatta. Non aggiungere AggregateRating allo structured data.
 
-I quattro estratti sono in `reviews` di `content.ts`. Le traduzioni non sono nuove recensioni; non attribuire a Google testimonianze provenienti da altri portali.
+I quattro estratti reali sono in `reviews` di `content.ts`: sono rimasti invariati. Lo sconto definitivo comunicato dal proprietario è **8%**, in tutte le lingue, nella hero e nella FAQ. I contatti definitivi sono chiamate +39 328 642 1509, WhatsApp +39 327 008 4357, email ladimoradeiricci@gmail.com.
 
-La frase vicino alle CTA è `site.directBooking`; la spiegazione completa è nella FAQ sulla prenotazione diretta. Su indicazione esplicita del committente del 17 settembre 2026, il testo è **“Sconto del 15% con prenotazione diretta”**, allineato anche in inglese e tedesco. Per future modifiche aggiorna entrambi. Base di calcolo ed eventuali condizioni della promozione restano da precisare dal gestore, senza inventarle nel codice.
+La cucina condivisa è disponibile per tutti: collegamento diretto con Ortensia e Tulipano, chiave dedicata per Glicine e Papavero. Testo centralizzato in `guest-info.ts`, con descrizioni coerenti nelle camere. Bambini fino a 3 anni gratis; animali su richiesta, senza limiti o supplementi inventati.
+
+La nuova guida indicizzabile è `/guida-santo-stefano-di-camastra/`: contenuti e fonti in `src/guide-content.ts`, pagina in `src/GuidePage.tsx`, stile in `src/guide.css`. Viene generata dal build e caricata separatamente nella navigazione. Il PDF italiano usa gli stessi contenuti, senza nuove fotografie. Per rigenerarlo dopo modifiche: `npm run build`, `python3 scripts/generate-guide-pdf.py` (richiede reportlab), poi `npm run build`. Controllare sempre visivamente HTML e PDF.
 
 ## 7. Logo, favicon, SEO e contatti
 
@@ -104,12 +106,22 @@ La frase vicino alle CTA è `site.directBooking`; la spiegazione completa è nel
 
 `seo` e `structuredData` in `site-settings.ts` alimentano title, description, canonical, social, dati strutturati e sitemap nel build. Il dominio è `https://ladimoradeiricci.com` e deve coincidere con quello scelto per il rilascio. Le lingue sono nella stessa URL, non pagine SEO indipendenti: non aggiungere hreflang verso URL inesistenti.
 
-I telefoni sono centralizzati in `site`: `phone` / `phoneLabel` per le chiamate (+39 328 642 1509), `whatsappPhone` per WhatsApp (numero precedente +39 327 008 4357, da cambiare solo su conferma). Footer, contatti, modali, CTA e Termini usano questi campi. Il template `index.html` contiene anche un telefono di fallback: il build lo sincronizza con Schema. Se cambia il trattamento dei dati, la privacy richiede revisione del titolare.
+I telefoni sono centralizzati in `site`: `phone` / `phoneLabel` per le chiamate (+39 328 642 1509), `whatsappPhone` per WhatsApp (numero confermato +39 327 008 4357). Footer, contatti, modali, CTA e Termini usano questi campi. Il template `index.html` contiene anche un telefono di fallback: il build lo sincronizza con Schema. Se cambia il trattamento dei dati, la privacy richiede revisione del titolare.
 
 Il colore hover dei pulsanti chiari è il token `--secondary-hover: #b94e34` (testo bianco, contrasto 5:1). Le CTA arancioni mantengono i colori precedenti.
 
-Le informazioni esterne e i limiti della verifica sono documentati in `REPORT-AGGIORNAMENTO-2026-09-19.md`. Non aggiungere orari del bus, gratuità o altezza massima del parcheggio senza nuove evidenze. I Termini non contengono politiche di cancellazione o pagamento inventate; prima del rilascio completare l'identità legale del gestore e far validare il testo.
+Le informazioni esterne e i limiti della verifica sono documentati in `REPORT-REVISIONE-2026-09-27.md`. Non aggiungere orari del bus, gratuità o altezza massima del parcheggio senza nuove evidenze. I Termini non contengono politiche di cancellazione o pagamento inventate; prima del rilascio completare l'identità legale del gestore e far validare il testo.
 
 ## 8. Dopo l'approvazione
 
 Si potrà caricare **solo `dist/` sul progetto Netlify esistente**, senza migrare provider. Non caricare `originals/`, `audit/`, `node_modules/` o tutto il progetto. Dominio, DNS, HTTPS e redirect sono un passaggio distinto da verificare; non alterare i record email. Nessun deploy è stato eseguito durante questa revisione.
+
+## Revisione responsive del 29 settembre 2026
+
+I nove vantaggi si modificano in `src/guest-info.ts` e sono renderizzati da `StayBenefits.tsx`. Titoli e descrizioni sono volutamente brevi in IT/EN/DE. La griglia mostra due card per riga sotto 600 px e tre da 600 px; l'ultima card mobile è centrata. Solo due colori alternati, stessa altezza, nessuna sillabazione automatica, nessun carosello. Evitare parole composte troppo lunghe nei titoli tedeschi.
+
+Il contenitore `.room-modal` protegge gli angoli e mantiene il pulsante di chiusura; `.modal-scroll` è l'unica area scorrevole. Non spostare `overflow: hidden` su quest'ultima. `RoomAmenities.tsx` condivide icone e dati tra schede e modali.
+
+`useScrollReveal.ts` gestisce le entrate con IntersectionObserver, senza nascondere il contenuto quando JavaScript è disattivato. La hero non usa lazy loading; le foto successive sì.
+
+Le nuove fotografie del proprietario sono in `territoryImages`. La homepage usa fontana e muro di maioliche nel formato originale; Villa Italia resta disponibile. La conversione si ripete con `scripts/prepare-images.py --territory` seguito dai tre JPEG nell'ordine giardino, muro, fontana: originali conservati fuori da `public`, varianti e manifest generati dallo script.

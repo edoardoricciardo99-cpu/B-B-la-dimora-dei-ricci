@@ -1,0 +1,38 @@
+[
+  {
+    "source": "originals/revisione-2026-10-05/camere ricontrollate/glicine/glicine bagno 2.jpeg",
+    "output": "/images/bnb/camere/glicine/bagno-glicine-vista-completa.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/camere ricontrollate/glicine/bagno/IMG_8331.heic",
+    "output": "/images/bnb/camere/glicine/bagno-glicine-doccia.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/camere ricontrollate/papavero/WhatsApp Image 2026-09-26 at 19.55.45.jpeg",
+    "output": "/images/bnb/camere/papavero/bagno-papavero-doccia-e-lavabo.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/camere ricontrollate/papavero/bagno papavero 2.jpeg",
+    "output": "/images/bnb/camere/papavero/bagno-papavero-vista-completa.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/cucina comune/030.jpg",
+    "output": "/images/bnb/spazi-comuni/cucina-comune-vista-ampia.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/cucina comune/046.jpg",
+    "output": "/images/bnb/spazi-comuni/ceramiche-cucina-comune.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/Nuove foto/IMG_8296.heic",
+    "output": "/images/bnb/territorio/tetti-e-colline-dalla-dimora.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/Nuove foto/IMG_8308.heic",
+    "output": "/images/bnb/territorio/piazza-e-locali-dalla-dimora.webp"
+  },
+  {
+    "source": "originals/revisione-2026-10-05/Nuove foto/IMG_8312.heic",
+    "output": "/images/bnb/territorio/vista-centro-storico-dalla-dimora.webp"
+  }
+]

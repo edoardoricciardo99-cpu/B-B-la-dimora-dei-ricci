@@ -3,7 +3,7 @@ import type { Language, Room } from './content';
 import SiteImage from './SiteImage';
 import { imageSettings, roomPhotoAlt } from './image-settings';
 import { site } from './site-settings';
-import { breakfastNote } from './guest-info';
+import RoomAmenities from './RoomAmenities';
 
 interface RoomModalProps {
   room: Room;
@@ -42,7 +42,7 @@ export default function RoomModal({ room, language, labels, onClose }: RoomModal
   const nativeDialogRef = useRef<HTMLDialogElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
-  const touchStartRef = useRef<number | null>(null);
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
 
   const goPrevious = useCallback(() => setIndex(value => (value - 1 + room.gallery.length) % room.gallery.length), [room.gallery.length]);
   const goNext = useCallback(() => setIndex(value => (value + 1) % room.gallery.length), [room.gallery.length]);
@@ -84,10 +84,12 @@ export default function RoomModal({ room, language, labels, onClose }: RoomModal
     <dialog ref={nativeDialogRef} className="modal-backdrop" aria-labelledby={`modal-${room.id}-title`} onCancel={event => { event.preventDefault(); onClose(); }} onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}>
       <div ref={dialogRef} className="room-modal">
         <button ref={closeRef} className="modal-close" type="button" onClick={onClose} aria-label={labels.close}>×</button>
-        <div className="modal-gallery" onTouchStart={event => { touchStartRef.current = event.touches[0]?.clientX ?? null; }} onTouchEnd={event => {
+        <div className="modal-scroll" tabIndex={0} role="region" aria-label={room.name[language]}>
+        <div className="modal-gallery" onTouchStart={event => { const touch = event.touches[0]; touchStartRef.current = touch ? { x: touch.clientX, y: touch.clientY } : null; }} onTouchEnd={event => {
           if (touchStartRef.current === null) return;
-          const delta = event.changedTouches[0].clientX - touchStartRef.current;
-          if (Math.abs(delta) > 45) {
+          const delta = event.changedTouches[0].clientX - touchStartRef.current.x;
+          const deltaY = event.changedTouches[0].clientY - touchStartRef.current.y;
+          if (Math.abs(delta) > 45 && Math.abs(delta) > Math.abs(deltaY)) {
             if (delta > 0) goPrevious();
             else goNext();
           }
@@ -102,10 +104,8 @@ export default function RoomModal({ room, language, labels, onClose }: RoomModal
           <p className="modal-kicker">La Dimora dei Ricci</p>
           <h2 id={`modal-${room.id}-title`}>{room.name[language]}</h2>
           <p>{room.description[language]}</p>
-          <p className="modal-breakfast">{breakfastNote[language]}</p>
-          <ul className="feature-list modal-features">
-            {room.features[language].map(feature => <li key={feature}>{feature}</li>)}
-          </ul>
+          <p className="room-distinction">{room.features[language][1]}</p>
+          <RoomAmenities room={room} language={language} />
           <section className="modal-stay-times" aria-label={labels.stay.eyebrow}>
             <p className="stay-kicker">{labels.stay.eyebrow}</p>
             <div><strong>{labels.stay.winter}</strong><span>{labels.stay.checkIn}: {labels.stay.winterIn}</span><span>{labels.stay.checkOut}: {labels.stay.out}</span></div>
@@ -114,11 +114,12 @@ export default function RoomModal({ room, language, labels, onClose }: RoomModal
           <div className="thumbnail-list" aria-label={labels.thumbnails}>
             {room.gallery.map((image, imageIndex) => (
               <button key={image} type="button" className={imageIndex === index ? 'is-active' : ''} onClick={() => setIndex(imageIndex)} aria-label={`${labels.image} ${imageIndex + 1}`} aria-current={imageIndex === index ? 'true' : undefined}>
-                <SiteImage language={language} src={image} alt="" sizes="100px" loading="lazy" decoding="async" />
+                <SiteImage language={language} src={image} alt={roomPhotoAlt(image, room.name[language], language)} sizes="100px" loading="lazy" decoding="async" />
               </button>
             ))}
           </div>
           <a className="button primary modal-cta" href={whatsapp} target="_blank" rel="noopener noreferrer">{labels.availability}</a>
+        </div>
         </div>
       </div>
     </dialog>
