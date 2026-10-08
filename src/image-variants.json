@@ -218,5 +218,105 @@
     "width": 1800,
     "height": 883,
     "srcSet": "/images/bnb/territorio/stagno-parco-dei-nebrodi-480.webp 480w, /images/bnb/territorio/stagno-parco-dei-nebrodi-960.webp 960w, /images/bnb/territorio/stagno-parco-dei-nebrodi.webp 1800w"
+  },
+  "/images/bnb/territorio/villa-italia-ceramiche.webp": {
+    "width": 1024,
+    "height": 683,
+    "srcSet": "/images/bnb/territorio/villa-italia-ceramiche-480.webp 480w, /images/bnb/territorio/villa-italia-ceramiche-960.webp 960w, /images/bnb/territorio/villa-italia-ceramiche.webp 1024w"
+  },
+  "/images/bnb/territorio/muro-ceramiche-belvedere.webp": {
+    "width": 1024,
+    "height": 683,
+    "srcSet": "/images/bnb/territorio/muro-ceramiche-belvedere-480.webp 480w, /images/bnb/territorio/muro-ceramiche-belvedere-960.webp 960w, /images/bnb/territorio/muro-ceramiche-belvedere.webp 1024w"
+  },
+  "/images/bnb/territorio/fontana-ceramica-mare.webp": {
+    "width": 1024,
+    "height": 683,
+    "srcSet": "/images/bnb/territorio/fontana-ceramica-mare-480.webp 480w, /images/bnb/territorio/fontana-ceramica-mare-960.webp 960w, /images/bnb/territorio/fontana-ceramica-mare.webp 1024w"
+  },
+  "/images/bnb/camere/glicine/bagno-glicine-vista-completa.webp": {
+    "width": 1066,
+    "height": 1600,
+    "srcSet": "/images/bnb/camere/glicine/bagno-glicine-vista-completa-480.webp 480w, /images/bnb/camere/glicine/bagno-glicine-vista-completa-960.webp 960w, /images/bnb/camere/glicine/bagno-glicine-vista-completa.webp 1066w"
+  },
+  "/images/bnb/camere/glicine/bagno-glicine-doccia.webp": {
+    "width": 1600,
+    "height": 900,
+    "srcSet": "/images/bnb/camere/glicine/bagno-glicine-doccia-480.webp 480w, /images/bnb/camere/glicine/bagno-glicine-doccia-960.webp 960w, /images/bnb/camere/glicine/bagno-glicine-doccia.webp 1600w"
+  },
+  "/images/bnb/camere/papavero/bagno-papavero-doccia-e-lavabo.webp": {
+    "width": 1066,
+    "height": 1600,
+    "srcSet": "/images/bnb/camere/papavero/bagno-papavero-doccia-e-lavabo-480.webp 480w, /images/bnb/camere/papavero/bagno-papavero-doccia-e-lavabo-960.webp 960w, /images/bnb/camere/papavero/bagno-papavero-doccia-e-lavabo.webp 1066w"
+  },
+  "/images/bnb/camere/papavero/bagno-papavero-vista-completa.webp": {
+    "width": 1066,
+    "height": 1600,
+    "srcSet": "/images/bnb/camere/papavero/bagno-papavero-vista-completa-480.webp 480w, /images/bnb/camere/papavero/bagno-papavero-vista-completa-960.webp 960w, /images/bnb/camere/papavero/bagno-papavero-vista-completa.webp 1066w"
+  },
+  "/images/bnb/spazi-comuni/cucina-comune-vista-ampia.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcSet": "/images/bnb/spazi-comuni/cucina-comune-vista-ampia-480.webp 480w, /images/bnb/spazi-comuni/cucina-comune-vista-ampia-960.webp 960w, /images/bnb/spazi-comuni/cucina-comune-vista-ampia.webp 1600w"
+  },
+  "/images/bnb/spazi-comuni/ceramiche-cucina-comune.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcSet": "/images/bnb/spazi-comuni/ceramiche-cucina-comune-480.webp 480w, /images/bnb/spazi-comuni/ceramiche-cucina-comune-960.webp 960w, /images/bnb/spazi-comuni/ceramiche-cucina-comune.webp 1600w"
+  },
+  "/images/bnb/territorio/tetti-e-colline-dalla-dimora.webp": {
+    "width": 1600,
+    "height": 900,
+    "srcSet": "/images/bnb/territorio/tetti-e-colline-dalla-dimora-480.webp 480w, /images/bnb/territorio/tetti-e-colline-dalla-dimora-960.webp 960w, /images/bnb/territorio/tetti-e-colline-dalla-dimora.webp 1600w"
+  },
+  "/images/bnb/territorio/piazza-e-locali-dalla-dimora.webp": {
+    "width": 1600,
+    "height": 900,
+    "srcSet": "/images/bnb/territorio/piazza-e-locali-dalla-dimora-480.webp 480w, /images/bnb/territorio/piazza-e-locali-dalla-dimora-960.webp 960w, /images/bnb/territorio/piazza-e-locali-dalla-dimora.webp 1600w"
+  },
+  "/images/bnb/territorio/vista-centro-storico-dalla-dimora.webp": {
+    "width": 1600,
+    "height": 900,
+    "srcSet": "/images/bnb/territorio/vista-centro-storico-dalla-dimora-480.webp 480w, /images/bnb/territorio/vista-centro-storico-dalla-dimora-960.webp 960w, /images/bnb/territorio/vista-centro-storico-dalla-dimora.webp 1600w"
+  },
+  "/images/bnb/dettagli/asciugamani-arrotolati.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcSet": "/images/bnb/dettagli/asciugamani-arrotolati-480.webp 480w, /images/bnb/dettagli/asciugamani-arrotolati-960.webp 960w, /images/bnb/dettagli/asciugamani-arrotolati.webp 1600w"
+  },
+  "/images/bnb/spazi-comuni/cucina-comune-angolo-caffe.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcSet": "/images/bnb/spazi-comuni/cucina-comune-angolo-caffe-480.webp 480w, /images/bnb/spazi-comuni/cucina-comune-angolo-caffe-960.webp 960w, /images/bnb/spazi-comuni/cucina-comune-angolo-caffe.webp 1600w"
+  },
+  "/images/bnb/spazi-comuni/cucina-comune-tavoli.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcSet": "/images/bnb/spazi-comuni/cucina-comune-tavoli-480.webp 480w, /images/bnb/spazi-comuni/cucina-comune-tavoli-960.webp 960w, /images/bnb/spazi-comuni/cucina-comune-tavoli.webp 1600w"
+  },
+  "/images/bnb/territorio/finestra-sul-mare-villa-margi.webp": {
+    "width": 1280,
+    "height": 853,
+    "srcSet": "/images/bnb/territorio/finestra-sul-mare-villa-margi-480.webp 480w, /images/bnb/territorio/finestra-sul-mare-villa-margi-960.webp 960w, /images/bnb/territorio/finestra-sul-mare-villa-margi.webp 1280w"
+  },
+  "/images/bnb/territorio/lungomare-villa-margi.webp": {
+    "width": 550,
+    "height": 480,
+    "srcSet": "/images/bnb/territorio/lungomare-villa-margi-480.webp 480w, /images/bnb/territorio/lungomare-villa-margi.webp 550w"
+  },
+  "/images/bnb/territorio/agora-halaesa-arconidea.webp": {
+    "width": 960,
+    "height": 638,
+    "srcSet": "/images/bnb/territorio/agora-halaesa-arconidea-480.webp 480w, /images/bnb/territorio/agora-halaesa-arconidea.webp 960w"
+  },
+  "/images/bnb/territorio/gole-di-tiberio.webp": {
+    "width": 960,
+    "height": 609,
+    "srcSet": "/images/bnb/territorio/gole-di-tiberio-480.webp 480w, /images/bnb/territorio/gole-di-tiberio.webp 960w"
+  },
+  "/images/bnb/territorio/piramide-38-parallelo.webp": {
+    "width": 960,
+    "height": 640,
+    "srcSet": "/images/bnb/territorio/piramide-38-parallelo-480.webp 480w, /images/bnb/territorio/piramide-38-parallelo.webp 960w"
   }
 }

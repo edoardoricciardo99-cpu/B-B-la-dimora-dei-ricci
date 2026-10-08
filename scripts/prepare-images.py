@@ -4,6 +4,85 @@ from PIL import Image, ImageOps, ImageDraw, ImageFilter
 import json, base64, io, sys
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# Targeted, repeatable import of selected originals. HEIC decoding uses macOS;
+# output dimensions retain the original aspect ratio (no crop or enlargement).
+if '--selection' in sys.argv:
+    import subprocess, tempfile
+    manifest = ROOT / sys.argv[sys.argv.index('--selection') + 1]
+    metadata_path = ROOT / 'src/image-variants.json'
+    metadata = json.loads(metadata_path.read_text())
+    for item in json.loads(manifest.read_text()):
+        source = (ROOT / item['source']).resolve()
+        output = (ROOT / 'public' / item['output'].lstrip('/')).resolve()
+        if not source.is_relative_to(ROOT / 'originals') or not output.is_relative_to(ROOT / 'public/images') or output.suffix != '.webp':
+            raise SystemExit('Selection must read originals and write WebP image assets.')
+        with tempfile.TemporaryDirectory(prefix='dimora-image-') as temporary:
+            decoded = source
+            if source.suffix.lower() == '.heic':
+                decoded = Path(temporary) / 'decoded.jpg'
+                subprocess.run(['sips', '-s', 'format', 'jpeg', str(source), '--out', str(decoded)], check=True, stdout=subprocess.DEVNULL)
+            with Image.open(decoded) as original:
+                im = ImageOps.exif_transpose(original).convert('RGB')
+            im.thumbnail((1600, 1600), Image.Resampling.LANCZOS)
+            output.parent.mkdir(parents=True, exist_ok=True)
+            im.save(output, 'WEBP', quality=82, method=6)
+            variants = []
+            for width in [480, 960]:
+                if im.width > width:
+                    variant = output.with_name(f'{output.stem}-{width}.webp')
+                    im.resize((width, round(im.height * width / im.width)), Image.Resampling.LANCZOS).save(variant, 'WEBP', quality=80, method=6)
+                    variants.append(f'/{variant.relative_to(ROOT / "public")} {width}w')
+            url = '/' + str(output.relative_to(ROOT / 'public'))
+            variants.append(f'{url} {im.width}w')
+            metadata[url] = {'width': im.width, 'height': im.height, 'srcSet': ', '.join(variants)}
+            print(f'{output.name}: {im.width}x{im.height}, {output.stat().st_size} bytes')
+    metadata_path.write_text(json.dumps(metadata, indent=2) + '\n')
+    raise SystemExit(0)
+
+# Import only the owner's three territory photographs, without touching existing
+# room photographs or brand assets. Metadata is generated, never hand-edited.
+if '--territory' in sys.argv:
+    import shutil
+    inputs = sys.argv[sys.argv.index('--territory') + 1:]
+    if len(inputs) != 3:
+        raise SystemExit('Usage: prepare-images.py --territory garden.jpeg tiles.jpeg fountain.jpeg')
+    names = ['villa-italia-ceramiche', 'muro-ceramiche-belvedere', 'fontana-ceramica-mare']
+    archive = ROOT / 'originals/territorio-proprietario-2026-09-27'
+    archive.mkdir(parents=True, exist_ok=True)
+    destination = ROOT / 'public/images/bnb/territorio'
+    metadata_path = ROOT / 'src/image-variants.json'
+    metadata = json.loads(metadata_path.read_text())
+    for source, name in zip(map(Path, inputs), names):
+        original = archive / source.name
+        if original.exists() and original.read_bytes() != source.read_bytes():
+            raise SystemExit(f'Original already exists with different content: {original}')
+        if not original.exists():
+            shutil.copy2(source, original)
+        im = ImageOps.exif_transpose(Image.open(original)).convert('RGB')
+        im.thumbnail((1440, 1440), Image.Resampling.LANCZOS)
+        output = destination / f'{name}.webp'
+        im.save(output, 'WEBP', quality=82, method=6)
+        variants = []
+        for width in [480, 960]:
+            if im.width > width:
+                variant = output.with_name(f'{name}-{width}.webp')
+                im.resize((width, round(im.height * width / im.width)), Image.Resampling.LANCZOS).save(variant, 'WEBP', quality=80, method=6)
+                variants.append(f'/{variant.relative_to(ROOT / "public")} {width}w')
+        url = '/' + str(output.relative_to(ROOT / 'public'))
+        variants.append(f'{url} {im.width}w')
+        metadata[url] = {'width': im.width, 'height': im.height, 'srcSet': ', '.join(variants)}
+        print(f'{output.name}: {im.width}x{im.height}, {output.stat().st_size} bytes')
+    metadata_path.write_text(json.dumps(metadata, indent=2) + '\n')
+    raise SystemExit(0)
+
+# Small lossless derivative for the header; preserve the existing PNG.
+if '--logo-webp' in sys.argv:
+    source = ROOT / 'public/images/brand/logo-la-dimora-dei-ricci.png'
+    Image.open(source).save(source.with_suffix('.webp'), 'WEBP', lossless=True, method=6)
+    print('Lossless WebP logo generated; PNG preserved.')
+    raise SystemExit(0)
+
 originals = ROOT / 'originals/foto-bnb-2026-09-14/Webp foto BnB'
 brand = ROOT / 'public/images/brand'; brand.mkdir(parents=True, exist_ok=True)
 icons = ROOT / 'public/icons'; icons.mkdir(parents=True, exist_ok=True)
